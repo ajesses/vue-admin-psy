@@ -1,16 +1,16 @@
 import request from '@/utils/request'
 
-export function fetchList(query) {
+export function getCityList(query) {
   return request({
-    url: '/article/list',
+    url: '/city/list',
     method: 'get',
     params: query
   })
 }
 
-export function fetchArticle(id) {
+export function fetchCity(id) {
   return request({
-    url: '/article/detail',
+    url: '/city/detail',
     method: 'get',
     params: { id }
   })
@@ -18,21 +18,21 @@ export function fetchArticle(id) {
 
 export function fetchPv(pv) {
   return request({
-    url: '/article/pv',
+    url: '/city/pv',
     method: 'get',
     params: { pv }
   })
 }
 
-export function createArticle(data) {
+export function createCity(data) {
   return request({
-    url: '/article/create',
+    url: '/city/create',
     method: 'post',
     data
   })
 }
 
-export function updateArticle(data) {
+export function updateCity(data) {
   return request({
     url: '/article/update',
     method: 'post',

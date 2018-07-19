@@ -76,3 +76,16 @@ a:hover {
 .app-container {
   padding: 20px;
 }
+
+.filter-container {
+  padding-bottom: 10px;
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+.pagination-container {
+  margin-top: 30px;
+}

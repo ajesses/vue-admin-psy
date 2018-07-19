@@ -75,7 +75,7 @@ export default {
     theme: 'theme'
   },
   login: {
-    title: 'Login Form',
+    title: 'Psy',
     logIn: 'Log in',
     username: 'Username',
     password: 'Password',
@@ -110,6 +110,7 @@ export default {
     dragTips1: 'The default order',
     dragTips2: 'The after dragging order',
     title: 'Title',
+    name: 'name',
     importance: 'Imp',
     type: 'Type',
     remark: 'Remark',

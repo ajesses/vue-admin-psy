@@ -75,7 +75,7 @@ export default {
     theme: '换肤'
   },
   login: {
-    title: '系统登录',
+    title: '心理系统登录',
     logIn: '登录',
     username: '账号',
     password: '密码',
@@ -110,6 +110,7 @@ export default {
     dragTips1: '默认顺序',
     dragTips2: '拖拽后顺序',
     title: '标题',
+    name: '名字',
     importance: '重要性',
     type: '类型',
     remark: '点评',

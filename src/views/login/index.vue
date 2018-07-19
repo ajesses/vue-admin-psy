@@ -1,7 +1,10 @@
 <template>
   <div class="login-container">
     <el-form class="login-form" autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left">
-      <h3 class="title">心理</h3>
+      <div class="title-container">
+        <h3 class="title">{{$t('login.title')}}</h3>
+        <lang-select class="set-language"></lang-select>
+      </div>
       <el-form-item prop="username">
         <span class="svg-container svg-container_login">
           <svg-icon icon-class="user" />
@@ -34,9 +37,13 @@
 
 <script>
 import { isvalidUsername } from '@/utils/validate'
+import LangSelect from '@/components/LangSelect'
 
 export default {
   name: 'login',
+  components: {
+    LangSelect
+  },
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!isvalidUsername(value)) {
@@ -178,13 +185,22 @@ $light_gray:#eee;
       font-size: 20px;
     }
   }
-  .title {
-    font-size: 26px;
-    font-weight: 400;
-    color: $light_gray;
-    margin: 0px auto 40px auto;
-    text-align: center;
-    font-weight: bold;
+  .title-container {
+    position: relative;
+    .title {
+      font-size: 26px;
+      font-weight: 400;
+      color: $light_gray;
+      margin: 0px auto 40px auto;
+      text-align: center;
+      font-weight: bold;
+    }
+    .set-language {
+      color: #fff;
+      position: absolute;
+      top: 5px;
+      right: 0px;
+    }
   }
   .show-pwd {
     position: absolute;
